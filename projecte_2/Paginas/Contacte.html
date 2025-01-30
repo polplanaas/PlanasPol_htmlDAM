@@ -1,0 +1,129 @@
+<<!DOCTYPE html>
+<head>
+
+    <!-- Connectem amb el css i introduim "Guia turistica Puig-Reig" com a nom de la pagina -->
+    <title>Guia turistica Puig-Reig</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+<!-- Creem el menu el qual utilitzarem per nevagar de forma lliure -->
+</head>
+    <body>
+        <header>
+            <img class="bandera" src="../Multimedia/Bandera.png" alt=""></img>
+            <h1>
+                <a class="blanc" href="../Index.html">Descobrim Puig-Reig</a>
+            </h1>
+            <div id="header">
+                <ul class="menus">
+                    <li><a href="Historia.html">La seva historia</a></li>
+                    <li><a href="Turisme.html">Llocs turistics</a>
+                        <ul>
+                            <li><a href="Resteurants.html">Resteurants</a></li>
+                            <li><a href="Part_Antigua.html">La part antigua</a></li>
+                            <li><a href="Esports.html">Esports</a></li>
+                            <li><a href="Colonies.html">Colonies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Tradicions.html">Tradicions</a>
+                        <ul>
+                            <li><a href="Corrida.html">La corrida</a></li>
+                            <li><a href="Templers.html">Els templers</a></li>
+                            <li><a href="Sant_Marti.html">Sant martí</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Rutes.html">Rutes</a></li>
+                    <li><a href="Contacte.html">Contacte</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Creem un div per tal de crear un quadre on ficar la imatge -->
+            <div class="text" >
+                <img class="poble" src="../Multimedia/ajuntament.webp" alt="">
+                <!-- Creem un div on ens ens permetra poder afegir tot el questionari i els paragrafs que volguem -->
+                <div class="mes_informacio" >
+                    <p>Contacte amb nosaltres</p>
+                    <div class="contactes" >
+                        <fieldset>
+                            <!-- Indiquem les mesures del questionari -->
+                            <table width="50%" height="50%" border="0">
+                                <thead></thead>
+                                <tbody>
+                                    <form action="" method="post"> 
+                                            <tr>
+                                                <td>
+                                                    <label for="nom">Nom:</label>
+                                                </td>
+                                                <td align="left">
+                                                    <input type="text" name="nom">  
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="email">E-mail:</label>
+                                                </td>
+                                                <td align="left">
+                                                    <input type="text" name="email">  
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="edat">Edat:</label>
+                                                </td>
+                                                <td align="left">
+                                                    <input type="number" name="edat">  
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="date">Data de naixement:</label>
+                                                </td>
+                                                <td align="left">
+                                                    <input type="date" name="date">  
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="bottom">
+                                                    <label for="tipususer">Es voste de Puig-Reig?</label>
+                                                </td>
+                                                <td align="left">
+                                                    <input type="radio" name="tipususer" value="Usuari">Si<br>
+                                                    <input type="radio" name="tipususer" value="Convidat" checked>No<br>
+                                                </td> 
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <br><label for="comentaris">Que necessita?</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"><textarea name="textarea" rows="5" cols="42"></textarea></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="submit" value="Enviar">
+                                                    <input type="reset" value="Reset">
+                                                </td>
+                                            </tr>
+                                    </form>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                        </fieldset>
+                        <!-- Creem un paragraf dintre del primer div per tal de que quedi dintre el quadre de text -->
+                        <p>Per a mes informacio, consulta a <a  target="_blank" href="https://www.instagram.com/ajpuigreig/">@ajpuigreig</a></p>      
+                    </div>
+                </div>  
+        </main>
+          
+        <!-- Fem un fotter que es quedi fixat abaix indicant que aquesta pagina te tots els drets reservats -->
+        <footer>
+                <p class="footer" >&copy; 2023 Pol Planas. Tots els drets reservats.</p>
+        </footer>
+
+            <!-- Fiquem un boto amb un enllaç directe a la ubicacio de Puig-Reig -->
+            <button><a class="negre" target="_blank" href="https://www.google.com/maps/place/Puig-reig,+Barcelona/@41.9570802,1.8729402,12z/data=!3m1!4b1!4m6!3m5!1s0x12a5011da963f8b7:0x400fae021a40ce0!8m2!3d41.9740306!4d1.8611011!16s%2Fm%2F09gqfpq?entry=ttu">UBICACIO</a></button>
+
+    </body>
+</html>

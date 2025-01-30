@@ -1,0 +1,172 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+.index {
+    width: 100%;
+    background-color: #161b22;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    line-height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.contingut_index {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titol {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #58a6ff;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f0f6fc;
+    background-color: #21262d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+.contingut {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f0f6fc;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+.esports h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.esports h1:hover{
+    text-align: center;
+    font-size: 31px;
+    color: #58a6ff;
+}
+
+.container_f {
+    width: 70%;
+    margin: auto;
+}
+
+.container_b {
+    width: 100%;
+    margin: auto;
+}
+
+.container_t {
+    width: 100%;
+    margin: auto;
+}
+
+.box {
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    border: 2px solid #58a6ff;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    background-color: #f0f0f0;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+
+.box:hover {
+    background-color: #ccc;
+    border: 6px solid #58a6ff;
+}
+
+.text {
+    font-size: 20px;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    line-height: 4;
+}
+
+.samarretas {
+    width: 200px;
+    height: 200px;
+}
+
+.preu {
+    font-size: 18px;
+    color: black;
+    font-family: 'Georgia', serif;
+}
+
+.box:hover .preu{
+    font-size: 18px;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+}
+
+.box:hover .samarretas{
+    width: 220px;
+    height: 220px;
+}
+
+.box:hover .text{
+    font-size: 22px;
+    color: #58a6ff;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    line-height: 3;
+}
+
+footer {
+    background-color: #21262d;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    font-size: 13px;
+    color: white;
+}

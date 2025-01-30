@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+
+    <!-- Connectem amb el css i introduim "Guia turistica Puig-Reig" com a nom de la pagina -->
+    <title>Guia turistica Puig-Reig</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+<!-- Creem el menu el qual utilitzarem per nevagar de forma lliure -->
+</head>
+    <body>
+        <header>
+            <img class="bandera" src="../Multimedia/Bandera.png" alt=""></img>
+            <h1>
+                <a class="blanc" href="../Index.html">Descobrim Puig-Reig</a>
+            </h1>
+            <div id="header">
+                <ul class="menus">
+                    <li><a href="Historia.html">La seva historia</a></li>
+                    <li><a href="Turisme.html">Llocs turistics</a>
+                        <ul>
+                            <li><a href="Resteurants.html">Resteurants</a></li>
+                            <li><a href="Part_Antigua.html">La part antigua</a></li>
+                            <li><a href="Esports.html">Esports</a></li>
+                            <li><a href="Colonies.html">Colonies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Tradicions.html">Tradicions</a>
+                        <ul>
+                            <li><a href="Corrida.html">La corrida</a></li>
+                            <li><a href="Templers.html">Els templers</a></li>
+                            <li><a href="Sant_Marti.html">Sant martí</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Rutes.html">Rutes</a></li>
+                    <li><a href="Contacte.html">Contacte</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <!-- Creem diferents 2 articles, un per indicar els llocs turistics de Puig-Reig i l'altre per donar l'exemple d'algun no mencionat -->
+                <article class="turisme">
+                    <h1>Llocs turistics Puig-Reig</h1>
+                    <p>A Puig-Reig hi ha una gran varietat de llocs per visitar i fer turisme ja que es un poble amb molta historia i per tant pots trobarte monuments molt antics i emblematics.</p>
+                    <p>A part de poguer visitar:</p>
+                    <!-- Creem un ol per tal de crear un llista numerada i el type 1 per tal de que sigui a traves de numeros -->
+                    <ol>
+                        <li><a class="aturisme" href="Resteurants.html">Restaurants</a></li>
+                        <li><a class="aturisme" href="Part_Antigua.html">La part antigua</a></li>
+                        <li><a class="aturisme" href="Esports.html">Esports</a></li>
+                        <li><a class="aturisme" href="Colonies.html">Colonies</a></li>
+                    </ol>
+                    <p>Tambe podem visitar mols altres llocs intersants que poden ser de l'intres de molta gent.</p>
+                </article>
+                <article class="turisme1" >
+                    <h2>L'estacio</h2>
+                    <p>És un edifici aïllat de planta rectangular, amb planta baixa més planta pis i golfes, orientada a l'oest. Les façanes son fetes amb aplacat de pedra i les obertures , d'arc de mig punt i arcs rebaixats, amb maó col·locat a plec de llibre. Els tancaments són de fusta pintades de color vermell. La coberta és a dues aigües de teules àrabs amb el carener paral·lel a la façana principal amb una petita llucana a la façana posterior.</p>
+                    <h4>La seva historia</h4>
+                    <p>Oficialment el <i>"Tranvia o ferrocarril económico de Manresa a Berga"</i>, començà a veure la llum quan el seu projecte, plantejat des de feia temps, va ser presentat per a la seva aprovació a Corts el 1879. Dos anys més tard, concretament el 7 de Maig del 1881, s'atorgava a la Companyia abans esmentada, la concessió de la línia per un període de 60 anys. La Companyia General dels Ferrocarrils Catalans (CGFC) es va fundar el 4 de juliol de 1919 per a integrar tres empreses que explotaven diferents línies: Camins de Ferro del Nord-Est d'Espanya (entre Martorell i Barcelona); Ferrocarril Central Català (entre Martorell i Igualada); i Tramvia o Ferrocarril Econòmic de Manresa a Berga (entre Manresa, Berga i Guardiola de Berguedà). El 17 de maig de 1946 caducà la concessió de la línia Manresa-Olvan, que passà a ser explotada per la "Jefatura de Explotación de Ferrocarriles por el Estado". El tram Olvan-Guardiola, però, per ser de concessió posterior, continuava propietat de la companyia. Precisament per aquest fet, per la dificultat que suposava l'explotació de la línia en sectors de diferent propietat, l'octubre de 1961 l'estat nomenà a Ferrocarriles Catalanes com a administradors per mitjà d'un conveni. El 1955 la competència amb el transport per carretera ja començava a notar-se. El tren feia 2 viatges diaris de pujada i dos de baixada (fins a Guardiola únicament), mentre que l'autocar en feia 10. El 2 de Maig de 1972 s'aixecà la línia Olvan-Guardiola. L'1 de juliol de 1973 es feia el mateix entre Balsareny i Olvan. Més tard, degut a la unió subterrània dels pous de Balsareny i Sallent es suprimí el tram entre les dues poblacions. Al terme municipal de Puig-reig el tren feia parada a: el baixador de l'Ametlla, l'estació de Cal Vidal, a l'estació de Puig-rReig, al baixador de Puig-reig i al de Cal Prat.</p>
+                    <img class="imatges1" src="../Multimedia/estacio.jpg" alt="">
+                    <!-- Fiquem un boto el qual no esta fixat amb un enllaç directe a la ubicacio de l'estacio de Puig-Reig -->
+                    <button class="boto" >
+                        <a class="negre" target="_blank" href="https://maps.app.goo.gl/ZjgQPQXDswqN7F439"> UBICACIO </a>
+                    </button>
+                </article>
+            </section>
+        </main>
+
+        <!-- Fem un fotter que es quedi fixat abaix indicant que aquesta pagina te tots els drets reservats -->
+        <footer>
+            <p class="footer" >&copy; 2023 Pol Planas. Tots els drets reservats.</p>
+        </footer>
+
+        <!-- Fiquem un boto amb un enllaç directe a la ubicacio de Puig-Reig -->
+        <button><a class="negre" target="_blank" href="https://www.google.com/maps/place/Puig-reig,+Barcelona/@41.9570802,1.8729402,12z/data=!3m1!4b1!4m6!3m5!1s0x12a5011da963f8b7:0x400fae021a40ce0!8m2!3d41.9740306!4d1.8611011!16s%2Fm%2F09gqfpq?entry=ttu">UBICACIO</a></button>
+
+    </body>
+</html>
+    
