@@ -1,0 +1,188 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.negre {
+    color: black;
+    text-decoration: none;
+}
+
+.blanc {
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    margin-top: 10px;
+    top: 0;
+}
+
+header h1{
+    color: white;
+    padding-left: 25px;
+    padding-top: 40px;
+    text-align: left;
+    margin-right: 60px;
+}
+
+.fondo {
+    width: 1540px;
+    height: auto;
+    margin-left: -10px;
+    margin-top: -10px;
+    display: block;
+}
+
+.bandera {
+    width: 100px;
+    height: 100px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.bandera:hover{
+    width: 105px;
+    height: auto;
+}
+
+button {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    width: 110px;
+    right: 25px;
+    cursor: pointer;
+    border: 3px solid black;
+    align-content: center;
+    height: 35px;
+    position: fixed;
+    font-size: 20px;
+    bottom: 10px;
+}
+
+button a {
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: #42B881;
+    font-weight: bold;
+}
+
+#header {
+    margin: auto;
+    width: 988px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.menus li a {
+    display: flex;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 20px 50px;
+    display: block;
+}
+
+.menus li a:hover{
+    background-color: #42B881;
+    font-weight: bold;
+}
+
+.menus > li {
+    float: left;
+}
+
+.text {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-bottom: 100px;
+}
+
+.text2 {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.guia {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px solid white;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 170px;
+    background-color: rgba(214, 238, 238, 0.521);
+}
+
+.mes_informacio {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    font-size: 50px;
+    font-weight: bold;
+    border: 3px solid white;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgba(214, 238, 238, 0.521);
+}
+
+.contactes{
+    font-size: 20px;
+}
+
+.ajuda {
+    position: absolute;
+    top: 33%;
+    left: 41%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.components {
+    font-size: 100px;
+    position: absolute;
+    top: 80%;
+    left: 1%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+article h1{
+    font-size: 30px;
+}
+
+.himne{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    margin-left: 150px;
+}
+
+footer {
+    background-color: black;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    margin-left: -8px;
+    width: 100%;
+}
+
+.footer {
+    font-size: 12px;
+    color: white;
+}

@@ -1,0 +1,133 @@
+.index {
+    width: 100%;
+    background-color: #161b22;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    line-height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.contingut_index {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titol {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #58a6ff;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f0f6fc;
+    background-color: #21262d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+    font-weight: bold;
+}
+
+.contingut {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background-color: #21262d;
+}
+
+h1 {
+    font-size: 50px;
+    color: #f0f6fc;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.description {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0d1117;
+    font-style: italic;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 20px));
+    gap: 15px;
+    padding: 10px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.p_info {
+    text-align: left;
+}
+
+.p_info_l {
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+footer {
+    background-color: #21262d;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    font-size: 13px;
+    color: white;
+}
