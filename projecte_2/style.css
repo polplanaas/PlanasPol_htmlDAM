@@ -1,188 +1,196 @@
-* {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.negre {
-    color: black;
-    text-decoration: none;
-}
-
-.blanc {
-    color: white;
-    text-decoration: none;
-}
-
-header{
-    display: flex;
-    background-color: black;
+.index {
+    width: 100%;
+    background-color: #161b22;
     position: fixed;
-    z-index: 1;
-    margin-top: 10px;
     top: 0;
+    left: 0;
+    height: 70px;
+    line-height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-header h1{
-    color: white;
-    padding-left: 25px;
-    padding-top: 40px;
-    text-align: left;
-    margin-right: 60px;
+.contingut_index {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.fondo {
-    width: 1540px;
-    height: auto;
-    margin-left: -10px;
-    margin-top: -10px;
-    display: block;
-}
-
-.bandera {
-    width: 100px;
-    height: 100px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-.bandera:hover{
-    width: 105px;
-    height: auto;
-}
-
-button {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    width: 110px;
-    right: 25px;
-    cursor: pointer;
-    border: 3px solid black;
-    align-content: center;
-    height: 35px;
-    position: fixed;
-    font-size: 20px;
-    bottom: 10px;
-}
-
-button a {
-    text-decoration: none;
-}
-
-button:hover{
-    background-color: #42B881;
+.titol {
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #58a6ff;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
 }
 
-#header {
-    margin: auto;
-    width: 988px;
+.menu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
-ul, ol {
-    list-style: none;
+.menu li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.menus li a {
+.menu a {
+    text-decoration: none;
+    color: #f0f6fc;
+    background-color: #21262d;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    background-color: #58a6ff;
+    color: #0d1117;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+section {
+    padding: 20px;
+}
+
+.membres {
     display: flex;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    padding: 20px 50px;
-    display: block;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
 }
 
-.menus li a:hover{
-    background-color: #42B881;
-    font-weight: bold;
-}
-
-.menus > li {
-    float: left;
-}
-
-.text {
-    position: relative;
+.membres article {
+    background-color: #58a6ff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
     text-align: center;
-    color: black;
-    margin-bottom: 100px;
 }
 
-.text2 {
-    position: relative;
+.membres article p {
+    color: black;
+}
+
+section p {
+    color: #ffffff;
+}
+
+section.albums{
+    background-color: #292525;
+    padding: 2%;
+    
+}
+
+.albums article {
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
     text-align: center;
+}
+
+.albums {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.albums p{
+    color: #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #58a6ff;
     color: black;
 }
 
-.guia {
-    position: absolute;
-    top: 20%;
-    left: 28%;
-    font-size: 50px;
-    font-weight: bold;
-    border: 3px solid white;
-    padding-bottom: 100px;
-    padding-left: 40px;
-    padding-right: 170px;
-    background-color: rgba(214, 238, 238, 0.521);
+.llista_membres {
+    background-color: #2f2828;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+    max-width: 800px;
 }
 
-.mes_informacio {
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    font-size: 50px;
-    font-weight: bold;
-    border: 3px solid white;
-    padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    background-color: rgba(214, 238, 238, 0.521);
+.cançons {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 4%;
 }
 
-.contactes{
-    font-size: 20px;
+.cançons h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #58a6ff ;
 }
 
-.ajuda {
-    position: absolute;
-    top: 33%;
-    left: 41%;
-    font-size: 25px;
-    font-weight: bold;
+.cançons audio {
+    margin: 1%;
 }
 
-.components {
-    font-size: 100px;
-    position: absolute;
-    top: 80%;
-    left: 1%;
-    font-size: 25px;
-    font-weight: bold;
+.videoclips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-article h1{
-    font-size: 30px;
+.videoclips video{
+    height: 250px;
+    border: #58a6ff solid;
 }
 
-.himne{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 2px solid white;
-    margin-left: 150px;
+.videoclips video:hover{
+    height: 255px;
+    border: #58a6ff solid;
+}
+
+.ubicacio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 footer {
-    background-color: black;
+    background-color: #21262d;
     padding: 5px 0;
     text-align: center;
     position: fixed;
     bottom: 0;
-    margin-left: -8px;
     width: 100%;
 }
 
 .footer {
-    font-size: 12px;
+    font-size: 13px;
     color: white;
 }
