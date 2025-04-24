@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> Agenda </h1>
+    <p id="dia"></p>
+    <h2 class="usuari" id="usuari"></h2>
+    <div id="tasques"></div>
+    <h2 class="limit" id="limit"></h2>
+
+<style>
+.usuari {
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.limit {
+    background-color: red;
+}
+</style>
+
+<script>
+    let avui = new Date().toLocaleDateString("es-ES");
+    // busquem el id dia i hi posem la data
+    document.getElementById("dia").innerHTML = "Avui es dia: " + avui;
+    // Demanen identificació d'usuari i password
+    let usuari = prompt("Introdueix el teu nom de usuari: ");
+    let contrasenya = prompt("Introdueix la contrasenya del usuari: ");
+    // si l'usuari no és correcte missatge d'error
+    if (usuari == "admin" && contrasenya == "1234") {
+        document.getElementById("usuari").innerHTML = "Tasques pendents de l'usuari Admin <br>-------------------------------------------"
+        document.getElementById("tasques").innerHTML = "- Donar permisos al nou usuari <br>- Actualitzar el windows"
+        document.getElementById("limit").innerHTML = "DATA LIMIT: 8 D'ABRIL"
+    } else if (usuari == "pol" && contrasenya == "1234") {
+        document.getElementById("usuari").innerHTML = "Tasques pendents de l'usuari Pol <br>-------------------------------------------"
+        document.getElementById("tasques").innerHTML = "- Fer copia de seguretat <br>- Acabar el codi de java <br>- Afegir el nou client a la base de dades"
+        document.getElementById("limit").innerHTML = "DATA LIMIT: 15 D'ABRIL"
+    } else {
+        alert ("Usuari o contrasenya incorrecte");
+        document.getElementById("usuari").innerHTML = "Usuari incorrecte!"
+    }
+</script>
+</body>
+</html>

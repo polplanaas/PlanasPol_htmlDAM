@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1 class="titol" > - - - | Whac-A-Mole | - - -</h1>
+    <p class="timeS" id="timeS">Time → 30</p>
+    </br>
+
+    <img id="imatge1" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge2" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge3" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge4" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge5" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge6" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge7" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge8" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge9" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+    <img id="imatge10" class="toposImg" onclick="star(this)" src="imatges/topoNo.jpg" alt="no-smile" width="200" height="150">
+
+    <p class="puntsS" id="punts">Score: 0</p>
+    <p class="topos" id="topos"></p>
+    <style>
+
+        .titol {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 2.5rem;
+            color: #d62828;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin-top: 20px;
+            background-color: #fefae0;
+            border: 3px dashed #f77f00;
+            padding: 10px 20px;
+            border-radius: 15px;
+        }
+
+        .timeS {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            color: #003049;
+            background-color: #d9ed92;
+            padding: 8px 16px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 10px auto;
+            text-align: center;
+            border: 2px solid #a7c957;
+            justify-content: center;
+            margin-left: 43%;
+        }
+
+        .toposImg{
+            margin: 25px;
+            margin-left: 55px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+        .puntsS {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #f77f00;
+            color: white;
+            padding: 10px 20px;
+            margin: 15px auto;
+            border-radius: 15px;
+            border: 3px solid #d62828;
+            width: fit-content;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .topos {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #003049;
+            color: #fefae0;
+            padding: 10px 20px;
+            margin: 15px auto;
+            border-radius: 15px;
+            border: 3px solid #fcbf49;
+            width: fit-content;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+
+        body {
+            background-image: url(imatges/house3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+  <script>
+
+    let time = 30;
+    countTime = setInterval(timeF, 1000);
+
+    function timeF() {
+        time--;
+        document.getElementById("timeS").innerHTML="Time → " + time;
+        if(time == 0) {
+            document.getElementById("timeS").innerHTML="TIME OUT ⏱️";
+            document.getElementById("punts").innerHTML="YOU LOSE 👎";
+            document.getElementById("topos").innerHTML="IT APPEARS " + contadorTopos + " MOLES 🐀";
+            clearTimeout(countTime);
+            clearTimeout(change);
+            document.getElementById("imatge1").src="imatges/topoNo.jpg";
+            document.getElementById("imatge2").src="imatges/topoNo.jpg";
+            document.getElementById("imatge3").src="imatges/topoNo.jpg";
+            document.getElementById("imatge4").src="imatges/topoNo.jpg";
+            document.getElementById("imatge5").src="imatges/topoNo.jpg";
+            document.getElementById("imatge6").src="imatges/topoNo.jpg";
+            document.getElementById("imatge7").src="imatges/topoNo.jpg";
+            document.getElementById("imatge8").src="imatges/topoNo.jpg";
+            document.getElementById("imatge9").src="imatges/topoNo.jpg";
+            document.getElementById("imatge10").src="imatges/topoNo.jpg";
+        }
+    }
+
+    let punts = 0;
+    change = setInterval(changeFoto, 400);
+    var audio = new Audio('boing.mp3');
+    let contadorTopos = 0;
+
+    function changeFoto() {
+        document.getElementById("imatge1").src="imatges/topoNo.jpg";
+        document.getElementById("imatge2").src="imatges/topoNo.jpg";
+        document.getElementById("imatge3").src="imatges/topoNo.jpg";
+        document.getElementById("imatge4").src="imatges/topoNo.jpg";
+        document.getElementById("imatge5").src="imatges/topoNo.jpg";
+        document.getElementById("imatge6").src="imatges/topoNo.jpg";
+        document.getElementById("imatge7").src="imatges/topoNo.jpg";
+        document.getElementById("imatge8").src="imatges/topoNo.jpg";
+        document.getElementById("imatge9").src="imatges/topoNo.jpg";
+        document.getElementById("imatge10").src="imatges/topoNo.jpg";
+
+        let aleatori = Math.trunc((Math.random() *(10))+1);
+        if(aleatori == 1) {
+            document.getElementById("imatge1").src="imatges/topoSi.jpg";
+        } else if(aleatori == 2) {
+            document.getElementById("imatge2").src="imatges/topoSi.jpg";
+        } else if(aleatori == 3) {
+            document.getElementById("imatge3").src="imatges/topoSi.jpg";
+        } else if(aleatori == 4) {
+            document.getElementById("imatge4").src="imatges/topoSi.jpg";
+        } else if(aleatori == 5) {
+            document.getElementById("imatge5").src="imatges/topoSi.jpg";
+        } else if(aleatori == 6) {
+            document.getElementById("imatge6").src="imatges/topoSi.jpg";
+        } else if(aleatori == 7) {
+            document.getElementById("imatge7").src="imatges/topoSi.jpg";
+        } else if(aleatori == 8) {
+            document.getElementById("imatge8").src="imatges/topoSi.jpg";
+        } else if(aleatori == 9) {
+            document.getElementById("imatge9").src="imatges/topoSi.jpg";
+        } else if(aleatori == 10) {
+            document.getElementById("imatge10").src="imatges/topoSi.jpg";
+        } else {
+        }
+        contadorTopos++;
+    }
+
+    function star(x) {
+        if(x.src.includes("imatges/topoSi.jpg")){
+            punts++;
+            audio.play();
+        } else {
+            punts--;
+        }
+        document.getElementById("punts").innerHTML="Score: " + punts;
+        x.src="imatges/topoPam.jpg";
+        if (punts == 10) {
+            document.getElementById("punts").innerHTML="HAS GUANYAT ⭐";
+            document.getElementById("topos").innerHTML="IT APPEARS " + contadorTopos + " MOLES 🐀";
+            clearTimeout(countTime);
+            clearTimeout(change);
+            document.getElementById("imatge1").src="imatges/topoNo.jpg";
+            document.getElementById("imatge2").src="imatges/topoNo.jpg";
+            document.getElementById("imatge3").src="imatges/topoNo.jpg";
+            document.getElementById("imatge4").src="imatges/topoNo.jpg";
+            document.getElementById("imatge5").src="imatges/topoNo.jpg";
+            document.getElementById("imatge6").src="imatges/topoNo.jpg";
+            document.getElementById("imatge7").src="imatges/topoNo.jpg";
+            document.getElementById("imatge8").src="imatges/topoNo.jpg";
+            document.getElementById("imatge9").src="imatges/topoNo.jpg";
+            document.getElementById("imatge10").src="imatges/topoNo.jpg";
+        }
+    }
+  </script>
+</body>
+</html>

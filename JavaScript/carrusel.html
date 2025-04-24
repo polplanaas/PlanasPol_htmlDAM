@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+       
+        .carrussel {
+            margin-top: 14%;
+            margin-left: 35%;
+            display: flex;
+        }
+
+        </style>
+        </head>
+        <body>
+        
+        <div class="carrussel">
+            <button onclick="botoEsquerre()" >&lt;</button>
+            <img id="imatge" src="imatges/img1.jpg" alt="Cinque Terre" width="400" height="250">
+            <button onclick="botoDret()" >&gt;</button>
+        </div>
+        
+        </body>
+<script>
+    let contador=0;
+
+    function botoDret() {
+        contador++;
+        if (contador==4) {
+            contador = 0;
+        }
+        mostrar();
+    }
+
+    function botoEsquerre() {
+        contador--;
+        if (contador==-1) {
+            contador = 3;
+        }
+        mostrar();
+    }
+
+    function mostrar() {
+        if (contador == 0) {document.getElementById("imatge").src="imatges/img1.jpg";}
+        if (contador == 1) {document.getElementById("imatge").src="imatges/img2.jpg";}
+        if (contador == 2) {document.getElementById("imatge").src="imatges/img3.jpg";}
+        if (contador == 3) {document.getElementById("imatge").src="imatges/img4.jpg";}
+    }
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h2>BOMBA</h2>
+ 
+<p>La bomba explotara</p>
+ 
+<p id="demo"></p>
+ 
+<script>
+let inici=10;
+let numBomba = setInterval(myTimer, 1000);
+ 
+function myTimer() {
+  inici--;
+  document.getElementById("demo").innerHTML = inici;
+  if (inici==0){
+    alert ("EXPLOSION!!!!"), clearTimeout(numBomba);
+  } 
+}
+</script>
+ 
+</body>
+</html>

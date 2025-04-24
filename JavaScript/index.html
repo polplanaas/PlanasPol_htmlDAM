@@ -4,10 +4,13 @@
 <h2>Això ha estat el meu primer programa en javascript</h2>
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlb3rimyi90D-hzYu7zmARBOBB7d-NfyfBKSBmWZr0Nsvty4sG99TNXFXy-C3SmlVfFoejU9PQwxgYoISvYa4oTteCFuVHuK6BY45y5Fdhn3xeNbbA3omNRif1z4UMLoOqrsUukM4scF8/s400/llorar.jpg" alt="p" width="500" height="333">
 <script>
-    let num1 = prompt("Dame un numero? ");
-    let num2 = prompt("Otro numero? ");
-    let result = (Number(num1) + Number(num2));
-    alert ("El resultado es: " + result);
+    let aleatori = Math.trunc((Math.random() *(10))+1);
+    let a = prompt("Entra un numero del 1 al 10")
+    if (a==aleatori) {
+        alert("Felicitats, has adivinat")
+    } else {
+        alert ("Esta malament, el numero era: " + aleatori)
+    }
 </script>
 </body>
 </html>

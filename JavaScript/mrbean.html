@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <img id="imatge" src="imatges/foto1.jpg" alt="no-smile" width="400" height="250">
+  <script>
+    let contador= 0;
+	
+    change = setInterval(changeFoto, 1000);
+
+    function changeFoto() {
+        if(contador == 0) {
+            document.getElementById("imatge").src="imatges/foto1.jpg";
+            contador++;
+        } else {
+            document.getElementById("imatge").src="imatges/foto2.jpg";
+            contador = 0;
+        }
+    }
+  </script>
+</body>
+</html>
