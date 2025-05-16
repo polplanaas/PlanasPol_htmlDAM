@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Piano</h1>
+        <button type="button" onclick="sonar(this)">Do</button>
+        <button type="button" onclick="sonar(this)">Re</button>
+        <button type="button" onclick="sonar(this)">Mi</button>
+        <button type="button" onclick="sonar(this)">Fa</button>
+        <button type="button" onclick="sonar(this)">Sol</button>
+        <button type="button" onclick="sonar(this)">La</button>
+        <button type="button" onclick="sonar(this)">Si</button>
+
+        <h1>Notas Tocadas</h1>
+        <p id="notasT"></p>
+
+        <button type="button" onclick="esborrar()">Esborrar Notas Tocadas</button>
+        <button type="button" onclick="repetir()">Repetir Notas Tocadas</button>
+            
+        </button>
+
+        <script>
+
+            let notasArray=[];
+
+            function sonar(num) {
+                var audio = new Audio(num.innerHTML + ".mp3");
+                audio.play();
+                notasArray.push(" " + num.innerHTML);
+                document.getElementById("notasT").innerHTML=notasArray;
+                delete notasArray[1];
+            }
+    
+            function esborrar() {
+                notasArray=[];
+                document.getElementById("notasT").innerHTML="";
+            }
+
+            function sleep(ms) {
+                return new Promise(resolve=>{
+                    setTimeout(resolve,ms);
+                });
+            }
+
+            async function repetir() {
+                for (let i = 0; i < notasArray.length; i++) {
+                    var audio = new Audio(notasArray[i] + ".mp3");
+                    audio.play();
+                    await sleep(500);
+                }
+            }
+        </script>
+    </body>
+    
+</html>
