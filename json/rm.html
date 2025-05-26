@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rick i Morty</title>
+  </head>
+     <style>
+      body {
+        background-color: #1b1b1b;
+        color: #00ffcc;
+        font-family: 'Courier New', monospace;
+        text-align: center;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 32px;
+        text-shadow: 2px 2px #ff00ff;
+        margin-bottom: 20px;
+      }
+
+      input {
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid #00ffcc;
+        background-color: #000;
+        color: #00ffcc;
+        width: 250px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: #ff00ff;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+         padding: 14px 22px;
+        background-color: #ff33ff;
+      }
+
+      img {
+        margin-top: 20px;
+        width: 220px;
+        border: 4px solid #00ffcc;
+        box-shadow: 0 0 15px #00ffcc;
+      }
+
+      .info {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #ffffff;
+        background: #222;
+        display: inline-block;
+        padding: 10px;
+        border: 2px dashed #ff00ff;
+        margin-top: 20px;
+      }
+    </style>
+  <body>
+    <h1>Busca un personatge de Rick i Morty</h1>
+    <input id="nomPersonatge" placeholder="Nom del personatge" />
+    <button onclick="buscar()">Buscar</button>
+
+    <br/>
+    <img id="imatge" src="" style="width:200px;" />
+    <p id="Nom"></p>
+    <p id="Especie"></p>
+    <p id="Genere"></p>
+    <p id="Origen"></p>
+    <p id="Error"></p>
+    <p id="Carregant"></p>
+
+    <script>
+      function buscar() {
+        let nomUser = document.getElementById("nomPersonatge").value;
+
+        fetch("https://rickandmortyapi.com/api/character/?name=" + nomUser)
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.error == null) {
+             document.getElementById("Carregant").src = "Carregant...";
+              document.getElementById("imatge").src = data.results[0].image;
+              document.getElementById("Nom").innerHTML = "Nom: " + data.results[0].name;
+              document.getElementById("Especie").innerHTML = "Nom: " + data.results[0].species;
+              document.getElementById("Genere").innerHTML = "Nom: " + data.results[0].gender;
+              document.getElementById("Origen").innerHTML = "Nom: " + data.results[0].origin.name;
+              document.getElementById("Error").innerHTML = " ";
+            } else {
+              document.getElementById("imatge").src = "";
+              document.getElementById("Nom").innerHTML = "";
+              document.getElementById("Especie").innerHTML = "";
+              document.getElementById("Genere").innerHTML = "";
+              document.getElementById("Origen").innerHTML = "";
+              document.getElementById("Error").innerHTML = "El personatge no s'ha trobat";
+            }
+          });
+      }
+    </script>
+  </body>
+</html>
