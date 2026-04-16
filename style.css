@@ -265,6 +265,36 @@ footer {
   padding: 20px;
 }
 
+.video-thumb {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-thumb img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.video-thumb:hover img {
+  transform: scale(1.1);
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+  opacity: 0.8;
+}
+
+.video-thumb:hover .play-btn {
+  opacity: 1;
+}
+
 /*distribució del menu en dispositius mòbils*/
 @media screen and (max-width: 768px) {
   .navbar-brand {
